@@ -1,0 +1,11 @@
+type RegisteredToken @entity {
+  id: ID!
+  address: Bytes!
+}
+
+type UniswapExchange @entity {
+  id: ID!
+  address: Bytes!
+  token: Bytes!
+  isErc777Token: Boolean!
+}
